@@ -12,14 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var tb = findViewById<ToggleButton>(R.id.toggleButton)
-        var iv = findViewById<ImageView>(R.id.imageView)
+        val tb = findViewById<ToggleButton>(R.id.toggleButton)
+        val iv = findViewById<ImageView>(R.id.imageView)
 
             tb.setOnClickListener {
               if (tb.text.toString() == "ON")
-                  iv.setImageResource(R.drawable.ic_launcher_foreground)
+                  iv.setImageResource(R.drawable.fonon)
               else
-                 iv.setImageResource(R.drawable.ic_launcher_background)
+                 iv.setImageResource(R.drawable.siooff)
 
 
         }
