@@ -2,24 +2,25 @@ package com.example.tooglebutton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.tooglebutton.databinding.ActivityMainBinding
+import android.widget.ImageView
+import android.widget.ToggleButton
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        binding.toggleButton.setOnClickListener {
-              if (binding.toggleButton.text.toString() == "ON"){
-                  binding.imageView.setImageResource(R.drawable.bulb10)
-              }
-            else{
-                binding.imageView.setImageResource(R.drawable.bulbon)
-              }
+        var tb = findViewById<ToggleButton>(R.id.toggleButton)
+        var iv = findViewById<ImageView>(R.id.imageView)
+
+            tb.setOnClickListener {
+              if (tb.text.toString() == "ON")
+                  iv.setImageResource(R.drawable.bulbonn)
+              else
+                 iv.setImageResource(R.drawable.bulbon)
+
 
         }
 

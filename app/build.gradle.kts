@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.tooglebutton"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.tooglebutton"
@@ -33,9 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
-        viewBinding = true
-    }
+
 }
 
 dependencies {
