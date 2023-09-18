@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
 
             tb.setOnClickListener {
               if (tb.text.toString() == "ON")
-                  iv.setImageResource(R.drawable.bulbonn)
+                  iv.setImageResource(R.drawable.ic_launcher_foreground)
               else
-                 iv.setImageResource(R.drawable.bulbon)
+                 iv.setImageResource(R.drawable.ic_launcher_background)
 
 
         }
