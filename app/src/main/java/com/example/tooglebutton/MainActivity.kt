@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
 
             tb.setOnClickListener {
               if (tb.text.toString() == "ON")
+                  //Changes
                   iv.setImageResource(R.drawable.fonon)
               else
+                  //Changes
                  iv.setImageResource(R.drawable.siooff)
 
 
